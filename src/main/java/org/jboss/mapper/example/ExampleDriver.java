@@ -27,7 +27,7 @@ public class ExampleDriver {
     public static void main(String[] args) {
         
         try {
-            //importJavaSourceIntoModel();
+            importJavaSourceIntoModel();
             importXSDIntoModel();
         } catch (Throwable t) {
             t.printStackTrace();
