@@ -1,0 +1,26 @@
+<mapping>
+
+    <class name="org.mapow.example.order.abc.ABCOrder">
+        <field name="header"/>
+        <field name="orderItems" type="org.mapow.example.order.abc.OrderItem" collection="arraylist">
+            <bind-xml name="item" location="items"/>
+        </field>
+    </class>
+    
+    <class name="org.mapow.example.order.abc.OrderItem">
+        <field name="id"><bind-xml node="attribute"/></field>
+        <field name="price"><bind-xml node="element"/></field>
+        <field name="quantity"><bind-xml node="element"/></field>
+    </class>
+    
+    <class name="org.mapow.OrderA">
+        <field name="orderNum">
+            <bind-xml name="orderNum"/>
+        </field>
+        <field name="amount"/>
+        <field name="items" type="org.mapow.Item" collection="arraylist">
+            <bind-xml name="item" location="items"/>
+        </field>
+    </class>
+
+</mapping>

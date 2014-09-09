@@ -5,7 +5,10 @@
         <customer-num>ACME-123</customer-num>
         <order-num>ORDER1</order-num>
     </header>
-    <order-items  price="2.25" quantity="1000" xsi:type="java:org.mapow.example.order.abc.OrderItem">
-        <id>PICKLE</id>
-    </order-items>
+    <items>
+        <item id="PICKLE">
+            <price>2.25</price>
+            <quantity>1000</quantity>
+        </item>
+    </items>
 </ABCOrder>
